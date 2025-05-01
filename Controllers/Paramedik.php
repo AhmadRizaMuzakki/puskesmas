@@ -45,8 +45,18 @@ class Paramedik
 
     public function delete($id)
     {
-        $stmt = $this->pdo->prepare("DELETE FROM paramedik WHERE id = ?");
-        return $stmt->execute([$id]);
+        try {
+            // Hapus data terkait di tabel periksa terlebih dahulu
+            $stmt = $this->pdo->prepare("DELETE FROM periksa WHERE paramedik_id = ?");
+            $stmt->execute([$id]);
+            
+            // Kemudian hapus data paramedik
+            $stmt = $this->pdo->prepare("DELETE FROM paramedik WHERE id = ?");
+            return $stmt->execute([$id]);
+        } catch (PDOException $e) {
+            // Tangani error jika terjadi
+            return false;
+        }
     }
 }
 
