@@ -87,10 +87,14 @@
                         <thead>
                             <tr>
                                 <th>no</th>
-                                <th>kode</th>
                                 <th>nama pasien</th>
+                                <th>jenis kelamin</th>
+                                <th>tempat lahir</th>
+                                <th>tanggal lahir</th>
+                                <th>kategori</th>
+                                <th>telepon</th>
                                 <th>alamat</th>
-                                <th>email</th>
+                                <th>kantor</th>
                                 <th>aksi</th>
                             </tr>
                         </thead>
