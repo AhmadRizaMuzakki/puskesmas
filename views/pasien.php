@@ -196,7 +196,7 @@
                                     ];
                                     
                                     $pasien->create($data);
-                                    echo '<script>alert("Data berhasil ditambahkan")</script><meta http-equiv="refresh" content="0; url=?url=home">';
+                                    echo '<script>alert("Data berhasil ditambahkan")</script><meta http-equiv="refresh" content="0; url=?url=pasien">';
                                 } elseif($_POST['type']=='edit') {
                                     $data = [
                                         'kode' => $_POST['kode'],
