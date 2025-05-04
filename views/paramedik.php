@@ -87,7 +87,7 @@
                         <thead>
                             <tr>
                                 <th>no</th>
-                                <th>nama pasien</th>
+                                <th>nama parameik</th>
                                 <th>jenis kelamin</th>
                                 <th>tempat lahir</th>
                                 <th>tanggal lahir</th>
